@@ -1,0 +1,48 @@
+//Name: Sameer Yasin
+//PRN: 24070123092
+//Division: B1
+//Exp-12
+
+//Program-6
+#include<iostream>
+using namespace std;
+
+int count=0;
+
+class Car{
+    public:
+    Car()
+    {
+        count++;
+        cout<<"No. of objects created: "<<count<<endl;
+    }
+
+    ~Car(){
+        count--;
+        cout<<"No. of objects destroyed: "<<count<<endl;
+    }
+};
+
+int main(){
+
+    Car c1, c2, c3;
+    {
+        Car c4, c5;
+    }
+
+    return 0;
+}
+
+
+/*==========OUTPUTS==========
+No. of objects created: 1
+No. of objects created: 2
+No. of objects created: 3
+No. of objects created: 4
+No. of objects created: 5
+No. of objects destroyed: 4
+No. of objects destroyed: 3
+No. of objects destroyed: 2
+No. of objects destroyed: 1
+No. of objects destroyed: 0
+*/
