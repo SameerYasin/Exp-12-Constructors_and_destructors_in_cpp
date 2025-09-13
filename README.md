@@ -67,9 +67,13 @@ This program defines a class Marks with five subjects as data members. The const
 
 ## Algorithm
 # Start
+
 Define a class Marks with five integer data members: MTT, DCLD, EDC, NT, SS.
+
 Define a constructor inside the class that prompts me to enter marks for each subject and stores the input in the respective data members.
+
 In the main() function create an object m1 of class Marks. The constructor is called automatically and inputs are taken.
+
 End
 
 ## Program-2: Constructor Outside Class
@@ -78,10 +82,15 @@ This program defines a class Marks with five subject marks as data members. The 
 
 ## Algorithm
 # Start
+
 Define a class Marks with five integer data members: MTT, DCLD, EDC, NT, SS.
+
 Declare a constructor Marks() to prompt me to enter marks for all five subjects and store the input values.
+
 Define a member function display() that outputs all the stored marks.
+
 In the main() function create an object m1 of class Marks. The constructor automatically runs to take input. Call m1.display() to show the entered marks.
+
 End
 
 ## Program-3: Parameterized Constructor
@@ -90,10 +99,15 @@ This program defines a class Num with two integers as data members. It uses a pa
 
 ## Algorithm
 # Start
+
 Define a class Num with two integer data members: num1 and num2.
+
 Define a parameterized constructor Num(int a, int b) that assigns a to num1 and b to num2.
+
 Define a member function display() that prints the values of num1 and num2.
+
 In the main() function create an object n1 of class Num by passing values (23, 78) to the constructor. Call n1.display() to output the stored values.
+
 End
 
 ## Program-4: Copy Constructor (Printing 2 numbers)
@@ -102,11 +116,17 @@ This program demonstrates the use of a copy constructor in C++. The class Num ha
 
 ## Algorithm
 # Start
+
 Define a class Num with two integer data members: num1 and num2.
+
 Define a parameterized constructor Num(int a, int b) that assigns a to num1 and b to num2.
+
 Define a copy constructor Num(const Num &n) that copies the values of num1 and num2 from another object n and prints "Copy constructor is called!".
+
 Define a member function display() that outputs the values of num1 and num2.
+
 In the main() function create object n1 with values (23, 78) using the parameterized constructor. Call n1.display() to print its values. Create another object n2 as a copy of n1. The copy constructor is invoked automatically. Call n2.display() to print the copied values.
+
 End
 
 ## Program-5: Copy Constructor (Book Details)
@@ -115,11 +135,17 @@ This program defines a class Book with data members for book name, author, and p
 
 ## Algorithm
 # Start
+
 Define a class Book with three data members: b_name (string), b_auth (string), and price (float).
+
 Define a parameterized constructor Book(string b, string a, float p) that assigns the values of book name, author, and price.
+
 Define a copy constructor Book(const Book &b) that copies the data members from another object and prints "Copy constructor is called!".
+
 Define a member function display() that outputs the book details.
+
 In the main() function take input from the user for book name, author, and price. Create object b1 using the parameterized constructor and display its details. Create another object b2 as a copy of b1, which automatically calls the copy constructor. Display the details of b2.
+
 End
 
 ## Program-6: Destructor (counting number of cars added and discarded)
@@ -129,8 +155,14 @@ This program demonstrates the use of constructors and destructors with a static 
 ## Algorithm
 # Start
 Declare a global integer variable count = 0 to keep track of the number of objects.
+
 Define a class Car with a constructor that increments count by 1 and prints the number of objects created and a destructor that decrements count by 1 and prints the number of objects destroyed.
-In the main() function create three objects c1, c2, and c3. Each constructor call increases and displays the count. Create a new block { ... } inside which two more objects c4 and c5 are created. Their constructors update and display the count. When the block ends, destructors of c4 and c5 are called automatically, reducing the count. At the end of main(), destructors of c1, c2, and c3 are called, again decreasing the count step by step.
+In the main() function create three objects c1, c2, and c3. Each constructor call increases and displays the count. Create a new block { ... } inside which two more objects c4 and c5 are created. 
+
+Their constructors update and display the count. When the block ends, destructors of c4 and c5 are called automatically, reducing the count. 
+
+At the end of main(), destructors of c1, c2, and c3 are called, again decreasing the count step by step.
+
 End
 
 ## Program-7: Destructor (without specifying constructor)
@@ -140,7 +172,11 @@ This program shows the working of a destructor in C++. The class Date has only a
 ## Algorithm
 # Start
 Define a class Date with a destructor that prints "Destructor Called" whenever an object is destroyed.
-In the main() function create four objects d1, d2, d3, d4. Enter a for loop that runs 4 times (i = 0 to 3). In each iteration, create a temporary object d1 inside the loop. At the end of each iteration, the loop’s local object d1 goes out of scope, and its destructor is called. After the loop ends, when main() completes, the destructors of d1, d2, d3, d4 (created outside the loop) are invoked automatically in reverse order of creation.
+
+In the main() function create four objects d1, d2, d3, d4. Enter a for loop that runs 4 times (i = 0 to 3). In each iteration, create a temporary object d1 inside the loop. At the end of each iteration, the loop’s local object d1 goes out of scope, and its destructor is called. 
+
+After the loop ends, when main() completes, the destructors of d1, d2, d3, d4 (created outside the loop) are invoked automatically in reverse order of creation.
+
 End
 
 ## Conclusion
